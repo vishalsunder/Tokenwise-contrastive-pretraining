@@ -1,0 +1,9 @@
+logs/
+__pycache__
+*.swp
+*.swo
+*.sh
+*.pkl
+*.log
+attn_maps/
+knn_scores/
