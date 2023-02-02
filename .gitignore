@@ -2,7 +2,7 @@ logs/
 __pycache__
 *.swp
 *.swo
-*.sh
+run_*.sh
 *.pkl
 *.log
 attn_maps/

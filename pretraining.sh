@@ -1,0 +1,24 @@
+python -u main.py \
+        --nsteps 600000 \
+        --steps-done 0 \
+        --log-after 500 \
+        --val-after 2000 \
+        --save-after 100000 \
+        --train-path "/librispeech/train_full_960.csv" \
+        --valid-path "/librispeech/dev_other.csv" \
+        --test-path "/librispeech/test_other.csv" \
+        --logging-file "logs/libri960_64b_600000.log" \
+        --dict-path "/saved_models/libri960_64b_steps_600000.pt" \
+        --save-path "/saved_models/libri960_64b" \
+        --batch-size 64 \
+        --lr 0.0001 \
+        --norm-epoch 3 \
+        --pyr-layer 3 \
+        --nlayer 6 \
+        --nhead 12 \
+        --sample-rate 8000 \
+        --nspeech-feat 80 \
+        --cuda \
+        --save-model \
+        --pretrain \
+        --seed 1
